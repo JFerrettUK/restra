@@ -1,0 +1,146 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  color: #e5e5e5;
+  font-family: 'Roboto', sans-serif;
+}
+
+#navMenu {
+  background-color: rgb(236, 121, 75);
+}
+
+#contactHead, #bottomBanner, .buttonTop {
+  background-color: #14213d;
+}
+
+#locationButton {
+  background: #14213d;
+  color: white;
+}
+
+
+#content {
+  display: grid;
+  grid-template-rows: 35px 100px 1fr 60px;
+  height: 100%;
+}
+
+#contactHead {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#navMenu {
+  display: grid;
+  grid-template-columns: 304px 1fr 700px;
+  align-items: center;
+  box-shadow: -8px 8px 6px -6px rgba(0, 0, 0, 0.5); 
+  position:relative;
+  z-index: 2;
+}
+
+  #logo {
+    height: 80px;
+    margin-left: 30px;
+  }
+
+  #menuCont {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: auto auto auto;
+    margin-right: 30px;
+    font-weight: 500;
+  }
+
+  .buttonTop {
+      font-size: 16px;
+      font-weight: 200;
+      letter-spacing: 1px;
+      padding: 13px 20px 13px;
+      outline: 0;
+      border: 1px solid rgb(255, 255, 255);
+      cursor: pointer;
+      position: relative;
+      color: #14213d;
+      background-color: rgba(0, 0, 0, 0);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .buttonTop:after {
+      content: "";
+      background-color: #ffe54c;
+      width: 100%;
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      top: 7px;
+      left: 7px;
+      transition: 0.2s;
+    }
+    
+    .buttonTop:hover:after {
+      top: 0px;
+      left: 0px;
+    }
+    
+    @media (min-width: 768px) {
+      .buttonTop {
+        padding: 13px 50px 13px;
+      }
+    }
+
+#contentMain {
+  display: grid;
+  align-items: center;
+  background-image: url('/src/backgroundimg.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  grid-template-rows: 1fr 50px 20px 1fr;
+
+}
+
+  #mainText, #lowerText {
+    display: grid;
+    color: #ffffff;
+    text-shadow: 2px 2px #14213d;
+    margin-left: 30%;
+  }
+
+  #mainText {
+    font-size: 49px;
+    font-weight: 800;
+}
+
+  #lowerText {
+    font-weight: 400;
+  }
+
+#bottomBanner {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  align-items: center;
+}
+  #socialImg {
+    margin-left: 30px;
+    height: 30px;
+  }
+
+  #lowerLinks {
+    display: grid;
+    grid-template-columns: 82px 80px 118px;
+    gap: 20px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+    .link {
+      display: grid;
+      justify-content: center;
+    }
