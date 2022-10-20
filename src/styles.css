@@ -30,8 +30,9 @@ body, html {
   display: grid;
   justify-content: center;
   align-items: center;
-  font-size: 15px;
+  font-size: small;
   font-weight: 500;
+  border-bottom: 1px solid white;
 }
 
 #navMenu {
@@ -57,7 +58,7 @@ body, html {
   }
 
   .buttonTop {
-      font-size: 16px;
+      font-size: medium;
       font-weight: 200;
       letter-spacing: 1px;
       padding: 13px 20px 13px;
@@ -114,11 +115,12 @@ body, html {
   }
 
   #mainText {
-    font-size: 49px;
+    font-size: 300%;
     font-weight: 800;
 }
 
   #lowerText {
+    font-size: medium;
     font-weight: 400;
   }
 
@@ -126,17 +128,19 @@ body, html {
   display: grid;
   grid-template-columns: 1fr 350px;
   align-items: center;
+  border-top: 1px solid white;
+
 }
   #socialImg {
     margin-left: 30px;
-    height: 30px;
+    height: 20px;
   }
 
   #lowerLinks {
     display: grid;
     grid-template-columns: 82px 80px 118px;
     gap: 20px;
-    font-size: 15px;
+    font-size: small;
     font-weight: 500;
   }
 
