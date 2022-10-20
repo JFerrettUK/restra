@@ -1,1 +1,0 @@
-A restaurant project in HTML, CSS, JS
