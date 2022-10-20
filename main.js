@@ -1,1 +1,1 @@
-console.log("woop!");
+(()=>{let e=document.createElement("div"),t=document.getElementById("content");t.id="content";let n=e;n.id="contactHead",console.log(n),t.appendChild(n)})();
