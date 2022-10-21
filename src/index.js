@@ -1,28 +1,37 @@
-//make a div
-let divElement = document.createElement('div');
-
 //main parent element
-let contentElement = document.getElementById('content');
-contentElement.id = "content";
-
+const contentElement = document.getElementById('content');
 
 //create the main parent directories
-let contactHead = divElement;
-contactHead.id = "contactHead";
-console.log(contactHead)
+const contactHead = document.createElement('div');
+contactHead.setAttribute("id", "contactHead");
 
-// let navMenu = divElement;
-// let contentMain = divElement;
-// let bottomBanner = divElement;
+const navMenu = document.createElement('div');
+navMenu.setAttribute("id", "navMenu");
+
+const contentMain = document.createElement('div');
+contentMain.setAttribute("id", "contentMain");
+
+const bottomBanner = document.createElement('div');
+bottomBanner.setAttribute("id", "bottomBanner");
 
 contentElement.appendChild(contactHead);
+contentElement.appendChild(navMenu);
+contentElement.appendChild(contentMain);
+contentElement.appendChild(bottomBanner);
 
 //create the ContactHead tree
 
-
+const contactHeadBody = document.getElementById('contactHead');
+var addressText = document.createTextNode("2904 15th Street NW. Nevada DV 12223   (202) 912 2333");
+contactHeadBody.appendChild(addressText);
 
 //create the navMenu tree
 
+const navMenuBody = document.getElementById('navMenu');
+const logo = document.createElement("img");
+logo.src = "/src/restralogo.png";
+logo.setAttribute("id", "logo");
+navMenuBody.appendChild(logo);
 
 
 //create the contentMain tree
