@@ -14,11 +14,10 @@ body, html {
   background-color: #14213d;
 }
 
-#locationButton {
+#activeButton {
   background: #14213d;
   color: white;
 }
-
 
 #content {
   display: grid;
