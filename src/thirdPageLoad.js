@@ -1,4 +1,4 @@
-export default function makePage() {
+export default function makePage2() {
     //main parent element
     const contentElement = document.getElementById('content');
 
@@ -55,7 +55,7 @@ export default function makePage() {
     menuButton.textContent = "MENUS";
 
     const reserveButton = document.createElement("button");
-    reserveButton.setAttribute("id", "topButton3");
+    reserveButton.setAttribute("id", "activeButton");
     reserveButton.setAttribute("class", "buttonTop");
     reserveButton.textContent = "BOOKING";
 

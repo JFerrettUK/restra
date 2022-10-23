@@ -4,6 +4,7 @@
   "description": "A restaurant page for TOP",
   "main": "index.js",
   "scripts": {
+    "watch": "webpack --watch",
     "test": "\"testing\""
   },
   "author": "JamesF",

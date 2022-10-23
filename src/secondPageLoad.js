@@ -1,4 +1,4 @@
-export default function makePage() {
+export default function makePage2() {
     //main parent element
     const contentElement = document.getElementById('content');
 
@@ -50,7 +50,7 @@ export default function makePage() {
     locationButton.textContent = "HOME";
 
     const menuButton = document.createElement("button");
-    menuButton.setAttribute("id", "topButton2");
+    menuButton.setAttribute("id", "activeButton");
     menuButton.setAttribute("class", "buttonTop");
     menuButton.textContent = "MENUS";
 
