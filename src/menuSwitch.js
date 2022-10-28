@@ -1,9 +1,18 @@
+import makePage from './initialPageLoad';
+import makePage2 from './secondPageLoad';
+import makePage3 from './thirdPageLoad';
+import refreshPage from './refreshPage';
+
+
 export default function menuSwitch() {
     const topButton1 = document.getElementById("topButton1");
     const topButton2 = document.getElementById("topButton2");
     const topButton3 = document.getElementById("topButton3");
 
     function activate1 () {
+        refreshPage();
+        makePage();
+
         topButton1.style.color = "white";
         topButton1.style.background = "#14213d";
 
@@ -12,9 +21,13 @@ export default function menuSwitch() {
 
         topButton3.style.color = "#14213d";
         topButton3.style.background = "transparent";
+
     }
 
     function activate2 () {
+        refreshPage();
+        makePage2();
+
         topButton2.style.color = "white";
         topButton2.style.background = "#14213d";
 
@@ -23,6 +36,7 @@ export default function menuSwitch() {
 
         topButton3.style.color = "#14213d";
         topButton3.style.background = "transparent";
+
     }
 
     function activate3 () {

@@ -45,6 +45,7 @@ export default function makePage() {
     //create the menuCont branch
 
     const locationButton = document.createElement("button");
+    locationButton.setAttribute("id", "activeButton");
     locationButton.setAttribute("id", "topButton1");
     locationButton.setAttribute("class", "buttonTop");
     locationButton.textContent = "HOME";

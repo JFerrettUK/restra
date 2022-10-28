@@ -1,8 +1,8 @@
 import makePage from './initialPageLoad';
-import menuSwitch from './menuSwitch';
-import refreshPage from './refreshPage';
 import makePage2 from './secondPageLoad';
 import makePage3 from './thirdPageLoad';
+import refreshPage from './refreshPage';
 
+import menuSwitch from './menuSwitch';
 makePage();
 menuSwitch();

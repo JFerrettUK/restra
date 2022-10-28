@@ -16,7 +16,8 @@ body, html {
 
 #topButton1 {
   background: #14213d;
-  color: white;
+  color:  0;
+  color: #e5e5e5;
 }
 
 #content {
@@ -31,7 +32,7 @@ body, html {
   align-items: center;
   font-size: small;
   font-weight: 500;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 #navMenu {
@@ -62,7 +63,7 @@ body, html {
       letter-spacing: 1px;
       padding: 13px 20px 13px;
       outline: 0;
-      border: 1px solid rgb(255, 255, 255);
+      border: 1px solid #e5e5e5;
       cursor: pointer;
       position: relative;
       color: #14213d;
@@ -108,7 +109,7 @@ body, html {
 
   #mainText, #lowerText {
     display: grid;
-    color: #ffffff;
+    color: #e5e5e5;
     text-shadow: 2px 2px #14213d;
     margin-left: 30%;
   }
@@ -123,11 +124,47 @@ body, html {
     font-weight: 400;
   }
 
+#contentMenu {
+  background-color: #14213d;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+  #centreBox {
+    height: 95%;
+    width: 600px;
+    background-color: #e5e5e5;
+    display: grid;
+    font-family: serif;
+    align-items: center;
+    align-content: center;
+    border-radius: 20px;
+
+  }
+
+    #menuText {
+      margin-top: 5%;
+      display: flex;
+      justify-content: center;
+      font-size: 300%;
+      font-weight: 500;
+      color: #14213d;
+    }
+
+    #starter, #main, #dessert {
+      color: #14213d;
+      font-size: 120%;
+      display: grid;
+      text-align: center;
+      justify-content: center;
+    }
+
 #bottomBanner {
   display: grid;
   grid-template-columns: 1fr 350px;
   align-items: center;
-  border-top: 1px solid white;
+  border-top: 1px solid #e5e5e5;
 
 }
   #socialImg {

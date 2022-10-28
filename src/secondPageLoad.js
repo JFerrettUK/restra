@@ -9,15 +9,15 @@ export default function makePage2() {
     const navMenu = document.createElement('div');
     navMenu.setAttribute("id", "navMenu");
 
-    const contentMain = document.createElement('div');
-    contentMain.setAttribute("id", "contentMain");
+    const contentMenu = document.createElement('div');
+    contentMenu.setAttribute("id", "contentMenu");
 
     const bottomBanner = document.createElement('div');
     bottomBanner.setAttribute("id", "bottomBanner");
 
     contentElement.appendChild(contactHead);
     contentElement.appendChild(navMenu);
-    contentElement.appendChild(contentMain);
+    contentElement.appendChild(contentMenu);
     contentElement.appendChild(bottomBanner);
 
     //create the ContactHead branch
@@ -50,7 +50,7 @@ export default function makePage2() {
     locationButton.textContent = "HOME";
 
     const menuButton = document.createElement("button");
-    menuButton.setAttribute("id", "activeButton");
+    menuButton.setAttribute("id", "topButton2");
     menuButton.setAttribute("class", "buttonTop");
     menuButton.textContent = "MENUS";
 
@@ -63,28 +63,12 @@ export default function makePage2() {
     menuCont.appendChild(menuButton);
     menuCont.appendChild(reserveButton);
 
-    //create the contentMain branch
+    //create the contentMenu branch
 
-    const contentBreak1 = document.createElement('div');
-    contentBreak1.setAttribute("id", "contentBreak1");
+    const centreBox = document.createElement('div');
+    centreBox.setAttribute("id", "centreBox");
 
-    const mainText = document.createElement('div');
-    mainText.setAttribute("id", "mainText");
-    mainText.textContent = "seasoned satisfaction";
-
-
-    const lowerText = document.createElement('div');
-    lowerText.setAttribute("id", "lowerText");
-    lowerText.textContent = "our flavours will leave you simmering in joy";
-
-
-    const contentBreak2 = document.createElement('div');
-    contentBreak2.setAttribute("id", "contentBreak2");
-
-    contentMain.appendChild(contentBreak1);
-    contentMain.appendChild(mainText);
-    contentMain.appendChild(lowerText);
-    contentMain.appendChild(contentBreak2);
+    contentMenu.appendChild(centreBox);
 
     //create the bottomBanner branch
 
