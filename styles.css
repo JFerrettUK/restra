@@ -1,0 +1,218 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  color: #e5e5e5;
+  font-family: 'Roboto', sans-serif;
+}
+
+#navMenu {
+  background-color: rgb(236, 121, 75);
+}
+
+#contactHead, #bottomBanner, .buttonTop {
+  background-color: #14213d;
+}
+
+#topButton1 {
+  background: #14213d;
+  color:  0;
+  color: #e5e5e5;
+}
+
+#content {
+  display: grid;
+  grid-template-rows: 35px 100px 1fr 60px;
+  height: 100%;
+}
+
+#contactHead {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  font-weight: 500;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+#navMenu {
+  display: grid;
+  grid-template-columns: 304px 1fr 700px;
+  align-items: center;
+  box-shadow: -8px 8px 6px -6px rgba(0, 0, 0, 0.5); 
+  position:relative;
+  z-index: 2;
+}
+
+  #logo {
+    height: 80px;
+    margin-left: 30px;
+  }
+
+  #menuCont {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: auto auto auto;
+    margin-right: 30px;
+    font-weight: 500;
+  }
+
+  .buttonTop {
+      font-size: medium;
+      font-weight: 200;
+      letter-spacing: 1px;
+      padding: 13px 20px 13px;
+      outline: 0;
+      border: 1px solid #e5e5e5;
+      cursor: pointer;
+      position: relative;
+      color: #14213d;
+      background-color: rgba(0, 0, 0, 0);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .buttonTop:after {
+      content: "";
+      background-color: #ffe54c;
+      width: 100%;
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      top: 7px;
+      left: 7px;
+      transition: 0.2s;
+    }
+    
+    .buttonTop:hover:after {
+      top: 0px;
+      left: 0px;
+    }
+    
+    @media (min-width: 768px) {
+      .buttonTop {
+        padding: 13px 50px 13px;
+      }
+    }
+
+#contentHolder {
+  height: 100%;
+}
+
+#contentMain {
+  display: grid;
+  align-items: center;
+  height: 100%;
+  background-image: url('/backgroundimg.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  grid-template-rows: 1fr 70px 20px 1fr;
+}
+
+  #mainText, #lowerText {
+    display: grid;
+    color: #e5e5e5;
+    text-shadow: 2px 2px #14213d;
+    margin-left: 30%;
+  }
+
+  #mainText {
+    font-size: 300%;
+    font-weight: 800;
+}
+
+  #lowerText {
+    font-size: medium;
+    font-weight: 400;
+  }
+
+#contentMenu {
+  display: grid;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #14213d;
+}
+
+  #centreBox {
+    height: 95%;
+    width: 600px;
+    background-color: #e5e5e5;
+    display: grid;
+    font-family: serif;
+    align-items: center;
+    align-content: center;
+    border-radius: 20px;
+  }
+
+    #menuText {
+      margin-top: 5%;
+      display: flex;
+      justify-content: center;
+      font-size: 300%;
+      font-weight: 500;
+      color: #14213d;
+    }
+
+    #starter, #main, #dessert, #starter2, #main2, #dessert2, #starter3, #main3, #dessert3, #starter4, #main4, #dessert4 {
+      color: #14213d;
+      font-size: 120%;
+      display: grid;
+      text-align: center;
+      justify-content: center;
+    }
+
+    #starter, #main, #dessert, #starterPrice, #mainPrice, #dessertPrice {
+      color: #14213d;
+      font-size: 120%;
+      display: grid;
+      text-align: center;
+      justify-content: center;
+      font-weight: 600;
+    }
+  
+#contentBook {
+  display: grid;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #14213d;
+}
+
+  #centreBox2 {
+    height: 95%;
+    min-width: 400px;
+    max-width: 900px;
+    background-color: #e5e5e5;
+    display: grid;
+    align-content: center;
+    border-radius: 20px;
+  }
+
+
+#bottomBanner {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+
+}
+  #socialImg {
+    margin-left: 30px;
+    height: 20px;
+  }
+
+  #lowerLinks {
+    display: grid;
+    grid-template-columns: 82px 80px 118px;
+    gap: 20px;
+    font-size: small;
+    font-weight: 500;
+  }
+
+    .link {
+      display: grid;
+      justify-content: center;
+    }
