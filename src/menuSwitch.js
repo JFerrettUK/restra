@@ -1,4 +1,4 @@
-import makePage from './initialPageLoad';
+import makePage1 from './firstPageLoad';
 import makePage2 from './secondPageLoad';
 import makePage3 from './thirdPageLoad';
 import refreshPage from './refreshPage';
@@ -11,43 +11,17 @@ export default function menuSwitch() {
 
     function activate1 () {
         refreshPage();
-        makePage();
-
-        topButton1.style.color = "white";
-        topButton1.style.background = "#14213d";
-
-        topButton2.style.color = "#14213d";
-        topButton2.style.background = "transparent";
-
-        topButton3.style.color = "#14213d";
-        topButton3.style.background = "transparent";
-
+        makePage1();
     }
 
     function activate2 () {
         refreshPage();
         makePage2();
-
-        topButton2.style.color = "white";
-        topButton2.style.background = "#14213d";
-
-        topButton1.style.color = "#14213d";
-        topButton1.style.background = "transparent";
-
-        topButton3.style.color = "#14213d";
-        topButton3.style.background = "transparent";
-
     }
 
     function activate3 () {
-        topButton3.style.color = "white";
-        topButton3.style.background = "#14213d";
-
-        topButton1.style.color = "#14213d";
-        topButton1.style.background = "transparent";
-
-        topButton2.style.color = "#14213d";
-        topButton2.style.background = "transparent";
+        refreshPage();
+        makePage3();
     }
 
     topButton1.addEventListener('click', activate1);

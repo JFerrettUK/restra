@@ -1,102 +1,110 @@
 export default function makePage2() {
-    //main parent element
-    const contentElement = document.getElementById('content');
-
-    //create the main parent directories
-    const contactHead = document.createElement('div');
-    contactHead.setAttribute("id", "contactHead");
-
-    const navMenu = document.createElement('div');
-    navMenu.setAttribute("id", "navMenu");
+    //create the contentMenu branch
 
     const contentMenu = document.createElement('div');
     contentMenu.setAttribute("id", "contentMenu");
 
-    const bottomBanner = document.createElement('div');
-    bottomBanner.setAttribute("id", "bottomBanner");
-
-    contentElement.appendChild(contactHead);
-    contentElement.appendChild(navMenu);
-    contentElement.appendChild(contentMenu);
-    contentElement.appendChild(bottomBanner);
-
-    //create the ContactHead branch
-
-    const contactHeadBody = document.getElementById('contactHead');
-    var addressText = document.createTextNode("2904 15th Street NW. Nevada DV 12223   (202) 912 2333");
-    contactHeadBody.appendChild(addressText);
-
-    //create the navMenu branch
-
-    const logo = document.createElement("img");
-    logo.src = "/src/restralogo.png";
-    logo.setAttribute("id", "logo");
-
-    const breakDiv = document.createElement('div');
-    breakDiv.setAttribute("id", "break");
-
-    const menuCont = document.createElement('div');
-    menuCont.setAttribute("id", "menuCont");
-
-    navMenu.appendChild(logo);
-    navMenu.appendChild(breakDiv);
-    navMenu.appendChild(menuCont);
-
-    //create the menuCont branch
-
-    const locationButton = document.createElement("button");
-    locationButton.setAttribute("id", "topButton1");
-    locationButton.setAttribute("class", "buttonTop");
-    locationButton.textContent = "HOME";
-
-    const menuButton = document.createElement("button");
-    menuButton.setAttribute("id", "topButton2");
-    menuButton.setAttribute("class", "buttonTop");
-    menuButton.textContent = "MENUS";
-
-    const reserveButton = document.createElement("button");
-    reserveButton.setAttribute("id", "topButton3");
-    reserveButton.setAttribute("class", "buttonTop");
-    reserveButton.textContent = "BOOKING";
-
-    menuCont.appendChild(locationButton);
-    menuCont.appendChild(menuButton);
-    menuCont.appendChild(reserveButton);
-
-    //create the contentMenu branch
-
     const centreBox = document.createElement('div');
     centreBox.setAttribute("id", "centreBox");
 
+    const menuText = document.createElement('div');
+    menuText.setAttribute("id", "menuText");
+    menuText.textContent = "Taste the Best";
+
+    const br = document.createElement('br');
+
+    const starter = document.createElement('div');
+    starter.setAttribute("id", "starter");
+    starter.textContent = 'Grilled Shrimp'
+
+    const starter2 = document.createElement('div');
+    starter2.setAttribute("id", "starter2");
+    starter2.textContent = 'Six shrimp in a chipotle marinade'
+
+    const starter3 = document.createElement('div');
+    starter3.setAttribute("id", "starter3");
+    starter3.textContent = 'served with chipotle aioli'
+
+    const starterPrice = document.createElement('div');
+    starterPrice.setAttribute("id", "starterPrice");
+    starterPrice.textContent = '£8.50'
+
+    const br2 = document.createElement('br');
+
+    const main = document.createElement('div');
+    main.setAttribute("id", "main");
+    main.textContent = 'Greek Pizza'
+
+    const main2 = document.createElement('div');
+    main2.setAttribute("id", "main2");
+    main2.textContent = 'Olive oil, kalamata olives, red onions,'
+
+    const main3 = document.createElement('div');
+    main3.setAttribute("id", "main3");
+    main3.textContent = 'mozzarella cheese, and feta cheese,'
+
+    const main4 = document.createElement('div');
+    main4.setAttribute("id", "main4");
+    main4.textContent = 'and a garlic puree'
+
+    const mainPrice = document.createElement('div');
+    mainPrice.setAttribute("id", "mainPrice");
+    mainPrice.textContent = '£15'
+
+    const br3 = document.createElement('br');
+
+    const dessert = document.createElement('div');
+    dessert.setAttribute("id", "dessert");
+    dessert.textContent = 'Sticky Toffee Pudding'
+
+    const dessert2 = document.createElement('div');
+    dessert2.setAttribute("id", "dessert2");
+    dessert2.textContent = 'Dark, sticky and treacley,'
+
+    const dessert3 = document.createElement('div');
+    dessert3.setAttribute("id", "dessert3");
+    dessert3.textContent = 'smothered in toffee sauce'
+
+    const dessert4 = document.createElement('div');
+    dessert4.setAttribute("id", "dessert4");
+    dessert4.textContent = 'and extra cream'
+
+    const dessertPrice = document.createElement('div');
+    dessertPrice.setAttribute("id", "dessertPrice");
+    dessertPrice.textContent = '£6.50'
+
+    contentHolder.appendChild(contentMenu);
     contentMenu.appendChild(centreBox);
+    centreBox.appendChild(menuText);
+    centreBox.appendChild(br);
+    centreBox.appendChild(starter);
+    centreBox.appendChild(starter2);
+    centreBox.appendChild(starter3);
+    centreBox.appendChild(starterPrice);
+    centreBox.appendChild(br2);
+    centreBox.appendChild(main);
+    centreBox.appendChild(main2);
+    centreBox.appendChild(main3);
+    centreBox.appendChild(main4);
+    centreBox.appendChild(mainPrice);
+    centreBox.appendChild(br3);
+    centreBox.appendChild(dessert);
+    centreBox.appendChild(dessert2);
+    centreBox.appendChild(dessert3);
+    centreBox.appendChild(dessert4);
+    centreBox.appendChild(dessertPrice);
 
-    //create the bottomBanner branch
+    const topButton1 = document.getElementById("topButton1");
+    const topButton2 = document.getElementById("topButton2");
+    const topButton3 = document.getElementById("topButton3");
 
-    const socialImg = document.createElement("img");
-    socialImg.src = "/src/social-icons.png";
-    socialImg.setAttribute("id", "socialImg");
+    topButton2.style.color = "white";
+    topButton2.style.background = "#14213d";
 
-    const lowerLinks = document.createElement('div');
-    lowerLinks.setAttribute("id", "lowerLinks");
+    topButton1.style.color = "#14213d";
+    topButton1.style.background = "transparent";
 
-    bottomBanner.appendChild(socialImg);
-    bottomBanner.appendChild(lowerLinks);
+    topButton3.style.color = "#14213d";
+    topButton3.style.background = "transparent";
 
-    //create the lowerLinks branch
-
-    const careers = document.createElement('div');
-    careers.setAttribute("class", "link");
-    careers.textContent = "CAREERS";
-
-    const contact = document.createElement('div');
-    contact.setAttribute("class", "link");
-    contact.textContent = "CONTACT";
-
-    const emailSignup = document.createElement('div');
-    emailSignup.setAttribute("class", "link");
-    emailSignup.textContent = "EMAIL SIGNUP";
-
-    lowerLinks.appendChild(careers);
-    lowerLinks.appendChild(contact);
-    lowerLinks.appendChild(emailSignup);
 }

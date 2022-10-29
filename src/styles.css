@@ -96,15 +96,19 @@ body, html {
       }
     }
 
+#contentHolder {
+  height: 100%;
+}
+
 #contentMain {
   display: grid;
   align-items: center;
+  height: 100%;
   background-image: url('/src/backgroundimg.jpg');
   background-repeat: no-repeat;
   background-size:cover;
   background-position: center;
-  grid-template-rows: 1fr 50px 20px 1fr;
-
+  grid-template-rows: 1fr 70px 20px 1fr;
 }
 
   #mainText, #lowerText {
@@ -125,10 +129,11 @@ body, html {
   }
 
 #contentMenu {
-  background-color: #14213d;
   display: grid;
+  height: 100%;
   justify-content: center;
   align-items: center;
+  background-color: #14213d;
 }
 
   #centreBox {
@@ -140,7 +145,6 @@ body, html {
     align-items: center;
     align-content: center;
     border-radius: 20px;
-
   }
 
     #menuText {
@@ -152,13 +156,41 @@ body, html {
       color: #14213d;
     }
 
-    #starter, #main, #dessert {
+    #starter, #main, #dessert, #starter2, #main2, #dessert2, #starter3, #main3, #dessert3, #starter4, #main4, #dessert4 {
       color: #14213d;
       font-size: 120%;
       display: grid;
       text-align: center;
       justify-content: center;
     }
+
+    #starter, #main, #dessert, #starterPrice, #mainPrice, #dessertPrice {
+      color: #14213d;
+      font-size: 120%;
+      display: grid;
+      text-align: center;
+      justify-content: center;
+      font-weight: 600;
+    }
+  
+#contentBook {
+  display: grid;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #14213d;
+}
+
+  #centreBox2 {
+    height: 95%;
+    min-width: 400px;
+    max-width: 900px;
+    background-color: #e5e5e5;
+    display: grid;
+    align-content: center;
+    border-radius: 20px;
+  }
+
 
 #bottomBanner {
   display: grid;

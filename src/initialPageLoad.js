@@ -9,15 +9,15 @@ export default function makePage() {
     const navMenu = document.createElement('div');
     navMenu.setAttribute("id", "navMenu");
 
-    const contentMain = document.createElement('div');
-    contentMain.setAttribute("id", "contentMain");
+    const contentHolder = document.createElement('div');
+    contentHolder.setAttribute("id", "contentHolder");
 
     const bottomBanner = document.createElement('div');
     bottomBanner.setAttribute("id", "bottomBanner");
 
     contentElement.appendChild(contactHead);
     contentElement.appendChild(navMenu);
-    contentElement.appendChild(contentMain);
+    contentElement.appendChild(contentHolder);
     contentElement.appendChild(bottomBanner);
 
     //create the ContactHead branch
@@ -64,7 +64,10 @@ export default function makePage() {
     menuCont.appendChild(menuButton);
     menuCont.appendChild(reserveButton);
 
-    //create the contentMain branch
+    //create the contentHolder branch
+
+    const contentMain = document.createElement('div');
+    contentMain.setAttribute("id", "contentMain");
 
     const contentBreak1 = document.createElement('div');
     contentBreak1.setAttribute("id", "contentBreak1");
@@ -82,6 +85,7 @@ export default function makePage() {
     const contentBreak2 = document.createElement('div');
     contentBreak2.setAttribute("id", "contentBreak2");
 
+    contentHolder.appendChild(contentMain);
     contentMain.appendChild(contentBreak1);
     contentMain.appendChild(mainText);
     contentMain.appendChild(lowerText);
