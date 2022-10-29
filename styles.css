@@ -47,6 +47,9 @@ body, html {
   #logo {
     height: 80px;
     margin-left: 30px;
+    background-image: url('restralogo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   #menuCont {
@@ -202,6 +205,9 @@ body, html {
   #socialImg {
     margin-left: 30px;
     height: 20px;
+    background-image: url('social-icons.png');
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
   #lowerLinks {
