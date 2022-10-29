@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "webpack --watch",
-    "test": "\"testing\"",
-    "deploy": "gh-pages -d dist"
+    "test": "\"testing\""
   },
   "author": "JamesF",
   "license": "ISC",
