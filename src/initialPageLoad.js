@@ -28,8 +28,7 @@ export default function makePage() {
 
     //create the navMenu branch
 
-    const logo = document.createElement("img");
-    logo.src = "restralogo.png";
+    const logo = document.createElement("div");
     logo.setAttribute("id", "logo");
 
     const breakDiv = document.createElement('div');
@@ -93,8 +92,7 @@ export default function makePage() {
 
     //create the bottomBanner branch
 
-    const socialImg = document.createElement("img");
-    socialImg.src = "social-icons.png";
+    const socialImg = document.createElement("div");
     socialImg.setAttribute("id", "socialImg");
 
     const lowerLinks = document.createElement('div');
